@@ -157,6 +157,7 @@ h2 { margin-bottom: 0; font-size: clamp(39px, 5vw, 63px); }
 .contact-details { display: grid; gap: 13px; margin-top: 43px; }
 .contact-details a, .contact-details p { margin: 0; font-size: 13px; }
 .contact-details span { display: block; margin-bottom: 3px; color: #747bab; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.contact-icon { display: inline-block; width: 16px; margin-right: 6px; color: var(--red); font-size: 14px; font-style: normal; letter-spacing: 0; text-align: center; }
 .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 17px; align-content: start; padding: 30px; background: var(--white); color: var(--ink); }
 .contact-form label { align-self: center; margin-top: 2px; font-size: 13px; font-weight: 700; }
 .contact-form input, .contact-form textarea { width: 100%; margin-bottom: 13px; padding: 11px 0; border: 0; border-bottom: 1px solid #cfd3df; outline: none; font: inherit; resize: vertical; }
