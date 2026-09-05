@@ -55,9 +55,6 @@ h1 em, h2 span { color: var(--red); font-style: normal; }
 .text-link.dark { color: var(--navy); }
 .hero-trust { display: flex; align-items: center; gap: 10px; margin-top: 74px; color: rgba(255,255,255,.57); font-size: 11px; }
 .trust-dot { width: 7px; height: 7px; background: var(--red); border-radius: 50%; }
-.hero-stat { position: absolute; z-index: 1; right: max(24px, calc((100vw - 1120px) / 2)); bottom: 58px; display: flex; align-items: center; gap: 13px; color: rgba(255,255,255,.65); font-size: 11px; text-transform: uppercase; letter-spacing: .13em; }
-.hero-stat strong { color: var(--red); font: 700 36px "Space Grotesk", sans-serif; }
-
 .section-pad { padding: 110px 0; }
 .intro { background: var(--pale); }
 .intro-grid, .section-heading { display: grid; grid-template-columns: 1.05fr .95fr; gap: 70px; align-items: end; }
@@ -71,6 +68,9 @@ h2 { margin-bottom: 0; font-size: clamp(39px, 5vw, 63px); }
 
 .section-heading { margin-bottom: 52px; }
 .section-heading > p { max-width: 320px; margin: 0; color: var(--muted); font-size: 14px; }
+.heading-side { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
+.heading-side > p { max-width: 320px; margin: 0; color: var(--muted); font-size: 14px; }
+.heading-side .text-link { flex-shrink: 0; white-space: nowrap; }
 .service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; }
 .service-card { min-height: 335px; position: relative; display: flex; flex-direction: column; padding: 27px 24px; border: 1px solid var(--line); background: var(--white); cursor: pointer; transition: transform .2s, box-shadow .2s, color .2s, background .2s, border-color .2s; }
 .service-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(8,13,92,.1); }
@@ -168,9 +168,10 @@ h2 { margin-bottom: 0; font-size: clamp(39px, 5vw, 63px); }
   .hero-text { font-size: 15px; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 19px; }
   .hero-trust { margin-top: 56px; }
-  .hero-stat { right: 18px; bottom: 28px; }
+
   .intro-grid, .section-heading, .about-grid, .objectives-grid, .contact-grid { grid-template-columns: 1fr; gap: 30px; }
   .section-heading { margin-bottom: 35px; }
+  .heading-side { align-items: start; flex-direction: column; gap: 16px; }
   .stats-grid { gap: 10px; margin-top: 55px; }
   .stat { display: block; }
   .stat strong { display: block; font-size: 31px; }
