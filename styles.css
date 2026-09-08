@@ -145,6 +145,32 @@ h2 { margin-bottom: 0; font-size: clamp(39px, 5vw, 63px); }
 .reason h3 { position: relative; z-index: 1; min-height: 45px; margin-bottom: 11px; color: var(--white); font: 600 18px "Space Grotesk", sans-serif; line-height: 1.25; }
 .reason p { position: relative; z-index: 1; margin: 0; color: rgba(255,255,255,.88); font-size: 13px; line-height: 1.55; }
 
+.gallery { background: var(--pale); }
+.gallery-heading { margin-bottom: 34px; }
+.gallery-tabs { display: inline-flex; gap: 4px; margin-bottom: 28px; padding: 4px; border-radius: 5px; background: #e2e5ed; }
+.gallery-tab { padding: 10px 22px; border: 0; border-radius: 3px; color: var(--navy); background: transparent; font: 700 12px "DM Sans", sans-serif; cursor: pointer; }
+.gallery-tab.is-active { color: var(--white); background: var(--navy); }
+.gallery-panel[hidden] { display: none; }
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; }
+.gallery-card { min-height: 195px; position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--navy); }
+.gallery-photo-card { padding: 0; color: var(--white); cursor: pointer; text-align: left; }
+.gallery-photo-card img { display: block; width: 100%; height: 195px; object-fit: cover; transition: transform .3s ease; }
+.gallery-photo-card:hover img { transform: scale(1.05); }
+.gallery-card-caption { position: absolute; right: 0; bottom: 0; left: 0; display: flex; justify-content: space-between; padding: 15px 14px 12px; color: var(--white); background: linear-gradient(transparent, rgba(5,8,61,.9)); font-size: 11px; font-weight: 700; }
+.gallery-card-caption b { color: #ff8586; font-size: 16px; }
+.gallery-video-card video { display: block; width: 100%; height: 175px; object-fit: cover; background: var(--navy-deep); }
+.gallery-video-card p { margin: 0; padding: 10px 13px; color: var(--white); background: var(--navy); font-size: 11px; }
+.gallery-card.is-missing::before { content: "Add media to assets/images/shipments or assets/videos/shipments"; position: absolute; inset: 0; z-index: 1; display: grid; place-items: center; padding: 20px; color: #bbc0d5; background: linear-gradient(135deg, var(--navy), #1b267b); font-size: 11px; text-align: center; }
+.gallery-load-more { display: block; margin: 30px auto 0; }
+.gallery-lightbox { width: min(92vw, 1000px); max-width: none; padding: 45px 60px; border: 0; border-radius: 8px; color: var(--white); background: rgba(5,8,61,.97); }
+.gallery-lightbox::backdrop { background: rgba(5,8,61,.8); }
+.gallery-lightbox img { display: block; max-width: 100%; max-height: 78vh; margin: auto; object-fit: contain; }
+.lightbox-close, .lightbox-control { position: absolute; border: 0; color: var(--white); background: transparent; cursor: pointer; }
+.lightbox-close { top: 10px; right: 18px; font-size: 30px; }
+.lightbox-control { top: 50%; padding: 12px; font-size: 23px; transform: translateY(-50%); }
+.lightbox-prev { left: 12px; }
+.lightbox-next { right: 12px; }
+
 .contact { color: var(--white); background: var(--navy-deep); }
 .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 120px; }
 .contact-copy h2 { margin-bottom: 25px; }
@@ -182,6 +208,7 @@ h2 { margin-bottom: 0; font-size: clamp(39px, 5vw, 63px); }
 @media (max-width: 850px) {
   .site-nav { gap: 18px; }
   .service-grid, .reasons-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
   .about-grid, .objectives-grid, .contact-grid { gap: 55px; }
   .section-pad { padding: 80px 0; }
 }
@@ -209,6 +236,8 @@ h2 { margin-bottom: 0; font-size: clamp(39px, 5vw, 63px); }
   .stat { display: block; }
   .stat strong { display: block; font-size: 31px; }
   .service-grid, .reasons-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-card, .gallery-photo-card img { min-height: 160px; height: 160px; }
   .service-card { min-height: 275px; }
   .about-visual { min-height: 370px; }
   .about-image { height: 330px; margin-right: 28px; }
