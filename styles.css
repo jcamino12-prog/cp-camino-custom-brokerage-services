@@ -42,7 +42,7 @@ h1, h2, h3, p { margin-top: 0; }
 h1, h2 { font-family: "Space Grotesk", sans-serif; letter-spacing: -.05em; line-height: 1.05; }
 h1 { max-width: 700px; margin-bottom: 25px; font-size: clamp(54px, 8vw, 92px); }
 h1 em, h2 span { color: var(--red); font-style: normal; }
-.hero-text { max-width: 410px; margin-bottom: 34px; color: rgba(255,255,255,.78); font-size: 17px; }
+.hero-text { max-width: 620px; margin-bottom: 34px; color: rgba(255,255,255,.82); font-size: 24px; line-height: 1.45; text-wrap: balance; }
 .hero-actions { display: flex; align-items: center; gap: 27px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 24px; padding: 15px 21px; border: 0; border-radius: 3px; font: 700 13px "DM Sans", sans-serif; cursor: pointer; transition: transform .2s, background .2s; }
 .button:hover { transform: translateY(-2px); }
@@ -224,7 +224,7 @@ h2 { margin-bottom: 0; font-size: clamp(39px, 5vw, 63px); }
   .hero { min-height: 680px; }
   .hero-content { padding-top: 90px; }
   h1 { font-size: clamp(48px, 15vw, 70px); }
-  .hero-text { font-size: 15px; }
+  .hero-text { max-width: 100%; font-size: 18px; line-height: 1.4; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 19px; }
   .hero-trust { margin-top: 56px; }
 
