@@ -170,15 +170,15 @@ h2 { margin-bottom: 0; font-size: clamp(39px, 5vw, 63px); }
 .lightbox-prev { left: 12px; }
 .lightbox-next { right: 12px; }
 
-.contact { color: var(--white); background: var(--navy-deep); }
-.contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 120px; }
+.contact { padding: 55px 0; color: var(--white); background: var(--navy-deep); }
+.contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 120px; align-items: start; }
 .contact-copy h2 { margin-bottom: 25px; }
 .contact-copy > p:not(.eyebrow) { max-width: 390px; color: #bbc0d5; font-size: 15px; }
 .contact-details { display: grid; gap: 13px; margin-top: 43px; }
 .contact-details a, .contact-details p { margin: 0; font-size: 13px; }
 .contact-details span { display: block; margin-bottom: 3px; color: #747bab; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
 .contact-icon { display: inline-block; width: 16px; margin-right: 6px; color: var(--red); font-size: 14px; font-style: normal; letter-spacing: 0; text-align: center; }
-.contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 17px; align-content: start; padding: 30px; background: var(--white); color: var(--ink); }
+.contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 17px; align-content: start; padding: 30px; border-radius: 14px; background: var(--white); color: var(--ink); }
 .contact-form label { align-self: center; margin-top: 2px; font-size: 13px; font-weight: 700; }
 .contact-form input, .contact-form textarea { width: 100%; margin-bottom: 13px; padding: 11px 0; border: 0; border-bottom: 1px solid #cfd3df; outline: none; font: inherit; resize: vertical; }
 .contact-form input:focus, .contact-form textarea:focus { border-color: var(--red); }
@@ -200,7 +200,6 @@ h2 { margin-bottom: 0; font-size: clamp(39px, 5vw, 63px); }
 
 .site-footer { color: var(--white); background: var(--navy); }
 .footer-wrap { min-height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 25px; }
-.footer-wrap .brand-mark { color: #ff6769; }
 .footer-wrap p, .back-top { margin: 0; color: #a7acd0; font-size: 11px; }
 .back-top { color: var(--white); font-weight: 700; }
 
@@ -244,6 +243,7 @@ h2 { margin-bottom: 0; font-size: clamp(39px, 5vw, 63px); }
   .about-badge { left: -9px; }
   .objectives-grid { gap: 50px; }
   .contact-grid { gap: 45px; }
+  .contact { padding: 42px 0; }
   .contact-form { padding: 23px 19px; }
   .location-map { padding-bottom: 70px; }
   .location-map-grid { grid-template-columns: 1fr; }
