@@ -200,7 +200,6 @@ h2 { margin-bottom: 0; font-size: clamp(39px, 5vw, 63px); }
 
 .site-footer { color: var(--white); background: var(--navy); }
 .footer-wrap { min-height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 25px; }
-.footer-wrap .brand-mark { color: #ff6769; }
 .footer-wrap p, .back-top { margin: 0; color: #a7acd0; font-size: 11px; }
 .back-top { color: var(--white); font-weight: 700; }
 
